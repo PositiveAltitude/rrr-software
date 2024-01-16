@@ -1,0 +1,11 @@
+# Project exclude paths
+/rrr-embedded/target/
+/rrr-frontend/target/
+/rrr-simulation/target/
+/rrr-embedded/wifi-password.secret
+/rrr-embedded/wifi-ssid.secret
+/rrr-embedded/.embuild/
+/rrr-frontend/dist/
+/.idea/
+/rrr-frontend/dist-gz/
+/rrr-api/target/

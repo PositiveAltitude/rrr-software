@@ -1,0 +1,28 @@
+[package]
+name = "rrr-frontend"
+version = "0.0.1"
+edition = "2021"
+
+[profile.release]
+opt-level = "s"
+strip = true
+lto = true
+codegen-units = 1
+
+[dependencies]
+rrr-api = {path = "../rrr-api"}
+
+yew = { version = "0.20", features = ["csr"] }
+#yew-mdc = {git = "https://github.com/lukepfeiffer10/yew-mdc.git"}
+yew-hooks = "0.2.0"
+yew-chart = "0.5.0"
+material-yew = { version = "0.3.0", features = ["full"] }
+web-sys = "0.3.64"
+reqwasm = "0.5.0"
+wasm-bindgen = "0.2.87"
+wasm-bindgen-futures = "0.4.37"
+serde = "1.0.185"
+serde_json = "1.0.105"
+gloo = "0.10.0"
+heapless = "0.7.16"
+anyhow = "1.0.75"
